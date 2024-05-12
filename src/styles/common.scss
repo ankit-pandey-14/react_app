@@ -1,0 +1,122 @@
+// common styling of display
+.d-flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 4 {
+    .gap-#{$i} {
+        gap: $i * 0.25rem;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.cursor-disable {
+    cursor: not-allowed;
+}
+
+// padding on "y" axis
+@for $i from 1 through 4 {
+    .py-#{$i} {
+        padding-top: $i * 0.25rem;
+        padding-bottom: $i * 0.25rem;
+    }
+}
+.py-5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+// padding on "x" axis
+@for $i from 1 through 4 {
+    .px-#{$i} {
+        padding-left: $i * 0.25rem;
+        padding-right: $i * 0.25rem;
+    }
+}
+.px-5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+// margin top
+@for $i from 0 through 4 {
+    .mt-#{$i} {
+        margin-top: $i * 0.25rem;
+    }
+}
+.mt-5 {
+    margin-top: 2rem;
+}
+@for $i from 0 through 4 {
+    .mb-#{$i} {
+        margin-bottom: $i * 0.25rem;
+    }
+}
+.mb-5 {
+    margin-bottom: 2rem;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// width
+.w-100 {
+    width: 100%;
+}
+
+// background colors
+.green-bg {
+    background-color: $green;
+}
+
+// text stylling
+.white-text {
+    color: $white;
+}
+.danger-text {
+    color: #ff0000;
+}
+.text-center {
+    text-align: center;
+}
+.text-end {
+    text-align: end;
+}
+.text-underline {
+    text-decoration: underline;
+}
+@for $i from 1 through 6 {
+    .fs-#{$i} {
+        font-size: 36px - $i * 4;
+    }
+}
+.fw-medium {
+    font-weight: 500;
+}
+.fw-bold {
+    font-weight: 700;
+}
+
+.ls-2 {
+    letter-spacing: 1px;
+}
+.ls-1 {
+    letter-spacing: .5px;
+}

@@ -1,0 +1,14 @@
+@import '../variables.scss';
+
+.custom-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 8px 23px;
+    border-radius: 5px;
+}
+
+.primary-button {
+    background-color: $green;
+    color: $white;
+}

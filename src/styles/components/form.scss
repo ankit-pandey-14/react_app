@@ -1,0 +1,69 @@
+@import '../variables.scss';
+
+.custom-form {
+    .field-input {
+        position: relative;
+        border-bottom: 2px solid $grey-light;
+        padding-right: 5px;
+
+        &:focus-within {
+            border-bottom: 2px solid $green;
+        }
+
+        input {
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            &:focus ~ label,
+            &:valid ~ label {
+                top: -7px;
+                color: $green;
+            }
+        }
+        
+        label {
+            position: absolute;
+            font-weight: 500;
+            top: 50%;
+            left: 5px;
+            color: $grey-light;
+            transform: translateY(-50%);
+            pointer-events: none;
+            transition: 0.3s ease;
+        }
+    }
+    .field-password {
+        input {
+            // border: 2px solid red;
+            width: 85%;
+        }
+    }
+}
+
+
+.login-form {
+    max-width: 500px;
+}
+.signup-form {
+    max-width: 700px;
+    .form-field {
+        width: 48%;
+    }
+    .signup-btn {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .custom-form {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .signup-form .form-field {
+        width: 100%;
+    }
+}
